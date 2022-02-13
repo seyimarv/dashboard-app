@@ -1,0 +1,67 @@
+@import "../../scss/mixins.scss";
+.auth-form {
+    width: 40rem;
+
+    @include respond(phone) {
+        width: 90%;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 3.4rem;
+        line-height: 4.4rem;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        font-family: 'Lato';
+        font-weight: normal;
+    }
+
+    &__options {
+        display: flex;
+        margin: 1.8rem 0rem;
+        width: 100%;
+        :nth-child(2) {
+            margin-left: 2rem;
+          }
+        p {
+            font-weight: normal;
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+            background-color: var(--color-white-primary);
+            padding: .4rem 1.2rem;
+            border-radius: .5rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            img {
+                padding: 0rem .5rem;
+                height: 1.3rem;
+            }
+          
+        }
+    }
+    &__card {
+        background-color: var(--color-white-primary);
+        padding: 2rem 2rem;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+     
+        &-link {
+          display: inline-block;
+          margin: 1.3rem .5rem;
+        }  
+    }
+    &__link {
+       display: flex;
+       justify-content: center;
+       margin: 1rem;
+       font-size: 1.2rem;
+       color: #858585;
+       a {
+           margin-left: .2rem;
+       }
+    }
+}

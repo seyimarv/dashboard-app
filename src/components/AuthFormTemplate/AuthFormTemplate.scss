@@ -1,0 +1,30 @@
+@import "../../scss/mixins.scss";
+
+.form-template {
+    display: flex;
+    height: 100vh;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    &__left-grid {
+        width: 40.8%;
+        background-color: var(--color-blue-primary);
+        color:  var(--color-white-primary);
+        font-size: 7.2rem;
+        font-weight: 700;
+        display: grid;
+        place-items: center;
+
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    &__right-grid {
+        display: grid;
+        place-items: center;
+        background-color: var(--color-grey-secondary);
+        flex-grow: 1;
+
+    }
+}
