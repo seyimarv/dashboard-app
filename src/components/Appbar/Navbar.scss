@@ -1,0 +1,50 @@
+@import "../../scss/mixins.scss";
+
+
+.navbar {
+    background-color: var(--color-blue-primary);
+    height: 100%;
+    padding: 3rem 3rem 4rem 3rem;
+    width: 100%;
+    border-radius: 3rem;
+    color: var(--color-white-primary);
+    position: relative;
+
+
+    @include respond(phone) {
+        border-radius:0rem;
+        padding-top: 10rem;
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+    }
+    &-items {
+        margin-top: 4rem;
+    }
+
+    &-footer {
+        position: absolute;
+        bottom: 4rem;
+
+        span {
+            display: block;
+            margin-top: 1rem;
+            font-size: 1.4rem;
+
+
+        }
+    }
+    .navigation-item {
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+
+        &__icon {
+            margin-right: 1rem;
+
+        }
+    }
+}

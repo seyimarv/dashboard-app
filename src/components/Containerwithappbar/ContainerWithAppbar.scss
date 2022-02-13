@@ -1,0 +1,50 @@
+@import "../../scss/mixins.scss";
+
+.containerwithappbar {
+    display: flex;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--color-grey-secondary);
+ 
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 2rem 1rem;
+
+    }
+
+    &__sidebar {
+        width: 20%;
+        @include respond(phone) {
+            transform: translateX(-40rem);
+            width: 0%;
+            transition: all .2s;
+
+        }
+    }
+
+    .show__navbar {
+        @include respond(phone) {
+            width: 40%;
+            transform: translateX(0rem);
+            position: absolute;
+            z-index: 5;
+            top: 0rem;
+            left: 0rem;
+            bottom: 0rem;
+
+        }
+
+    }
+
+    &__main {
+        margin: 2rem 4rem;
+        flex-grow: 1;
+
+        @include respond(phone) {
+            width: 100%;
+            margin: 2rem 0rem;
+
+        }
+    }
+}
