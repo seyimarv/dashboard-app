@@ -2,10 +2,10 @@ import React from "react";
 import './CustomButton.scss'
 
 
-const CustomButton = ({children}) => {
+const CustomButton = (props) => {
     return (
-         <button className="btn">
-            {children}
+         <button {...props} className={`btn ${props.filterbutton ? 'btn-filter' : ''}`}>
+            {props.children}
          </button>
     )
 }

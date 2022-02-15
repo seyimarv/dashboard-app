@@ -10,7 +10,6 @@
     @include respond(phone) {
         width: 100%;
         padding: 2rem 1rem;
-
     }
 
     &__sidebar {
@@ -25,7 +24,7 @@
 
     .show__navbar {
         @include respond(phone) {
-            width: 40%;
+            width: 45%;
             transform: translateX(0rem);
             position: absolute;
             z-index: 5;
@@ -37,8 +36,11 @@
 
     }
 
+    &__child {
+        margin: 2rem 0rem;
+    }
     &__main {
-        margin: 2rem 4rem;
+        margin: 1.2rem 4rem;
         flex-grow: 1;
 
         @include respond(phone) {

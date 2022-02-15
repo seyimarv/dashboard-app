@@ -5,6 +5,7 @@ import AppleIcon from "../../images/AppleIcon.svg";
 import GoogleIcon from "../../images/GoogleIcon.svg";
 import FormInput from "../../components/Forminput/Forminput";
 import CustomButton from "../../components/custom-button/CustomButton";
+
 const SignupForm = () => {
     return (
         <div className="auth-form">

@@ -5,17 +5,19 @@
     border-radius: 1rem;
     border: none;
     padding: .8rem 0rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     outline: none;
     cursor: pointer;
     transition: all .2s;
 
+    &-filter {
+        border: 1px solid #B0B0B0;
+        background-color: white;
+        color: #B0B0B0;
+    }
     &:hover {
         transform: translateY(-.1rem);
     }
     
 }
 
-.btn-primary {
-   
-}

@@ -20,9 +20,6 @@ const NavigationItem = ({ Icon, name, path }) => {
 
     return (
         <div className="navigation-item">
-            {/* <img style={{
-                height: '10px'
-            }} src={icon} alt="icon" /> */}
             <Icon className='navigation-item__icon' />
             {name}
         </div>

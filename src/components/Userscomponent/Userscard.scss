@@ -1,0 +1,79 @@
+.eachuser {
+    display: flex;
+    justify-content: space-between;
+    padding: .65rem 8rem .65rem 2.6rem;
+    font-family: 'Lato';
+    font-size: 1.4rem;
+    background-color: rgb(220, 217, 217);
+    border-radius: 1rem;
+    margin: 1.4rem 0rem;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: normal;
+
+    span {}
+
+    img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: white;
+    }
+}
+
+.userscard {
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    background-color: var(--color-white-primary);
+
+    .pagination {
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: right;
+
+        .disabled {
+            pointer-events: none;
+        }
+
+        .active {
+            background: #EAEAEA;
+            border-radius: 1rem;
+        }
+
+        span {
+            padding: .4rem .3rem;
+            color: #858585;
+        }
+
+    }
+
+
+    &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        .btn {
+            padding: .5rem 0rem;
+
+
+        }
+
+
+        h2 {
+            width: 60%;
+            font-size: 1.8rem;
+        }
+
+        &__right {
+            display: flex;
+            width: 40%;
+
+
+
+            :not(:last-child) {
+                margin: 0rem 1.3rem;
+            }
+        }
+    }
+}

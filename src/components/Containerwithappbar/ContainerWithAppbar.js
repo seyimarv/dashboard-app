@@ -16,10 +16,12 @@ const ContainerWithAppbar = ({ children }) => {
                 <Navbar />
             </div>
             <div className='containerwithappbar__main'>
-                <Header toggelNavbar={toggelNavbar}/>
-                {children}
+                <Header toggelNavbar={toggelNavbar} />
+                <div className='containerwithappbar__child'>
+                    {children}
+                </div>
             </div>
-        
+
         </div>
     )
 }
